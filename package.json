@@ -1,0 +1,40 @@
+{
+  "name": "decap-cms-media-library-s3",
+  "description": "S3-compatible object storage media library integration for Decap CMS",
+  "version": "1.0.0",
+  "repository": "https://github.com/decaporg/decap-cms/tree/main/packages/decap-cms-media-library-s3",
+  "bugs": "https://github.com/decaporg/decap-cms/issues",
+  "module": "dist/esm/index.js",
+  "main": "dist/decap-cms-media-library-s3.js",
+  "license": "MIT",
+  "keywords": [
+    "decap-cms",
+    "s3",
+    "aws",
+    "minio",
+    "object-storage",
+    "media",
+    "assets",
+    "files",
+    "uploads"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "develop": "npm run build:esm -- --watch",
+    "build": "cross-env NODE_ENV=production webpack",
+    "build:esm": "cross-env NODE_ENV=esm babel src --out-dir dist/esm --ignore \"**/__tests__\""
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.0.0",
+    "@aws-sdk/lib-storage": "^3.0.0",
+    "@aws-sdk/s3-request-presigner": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "cross-env": "^7.0.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
