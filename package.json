@@ -1,7 +1,7 @@
 {
   "name": "@aaabin/decap-cms-media-library-s3",
   "description": "S3-compatible object storage media library integration for Decap CMS",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "https://github.com/AaaBin/decap-cms-media-library-s3",
   "module": "dist/esm/index.js",
   "main": "dist/decap-cms-media-library-s3.js",
